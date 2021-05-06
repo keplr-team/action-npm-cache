@@ -1,0 +1,30 @@
+{
+  "name": "@keplr/action-npm-cache",
+  "version": "1.0.0",
+  "description": "Github action adding a cache around npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "ncc build save.ts -o save && ncc build restore.ts -o restore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keplr-team/action-npm-cache.git"
+  },
+  "dependencies": {
+    "@actions/cache": "^1.0.7",
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0",
+    "hasha": "^5.2.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.28.5",
+    "typescript": "^4.2.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keplr-team/action-npm-cache/issues"
+  },
+  "homepage": "https://github.com/keplr-team/action-npm-cache#readme"
+}

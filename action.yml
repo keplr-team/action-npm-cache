@@ -1,0 +1,6 @@
+name: 'Npm cache'
+description: 'Cache npm dependencies'
+runs:
+  using: 'node12'
+  main: 'restore/index.js'
+  post: 'save/index.js'
